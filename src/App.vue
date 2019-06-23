@@ -9,7 +9,7 @@
       </el-col>
     </el-row>-->
 
-    <el-container>
+    <el-container style="display:none;">
       <el-aside width="240px">
         <el-menu :default-openeds="['1', '3']">
           <el-submenu index="1">
@@ -85,16 +85,18 @@
         <el-footer  style="font-size: 12px;background-color:#999;">Footer</el-footer>
       </el-container>
     </el-container>
+    <login/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Login from "./views/Login.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Login,
+
   }
 };
 </script>
